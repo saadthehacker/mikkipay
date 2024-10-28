@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="signinstyle.css">
+<body>
+    <style>
+        h2 {
+            text-align: center;
+            
+        }
+    </style>
+    <style>
+
+        label {
+            display: inline-block;
+            width: 140px;
+            text-align: right;
+          }
+        
+    </style>
+    <div class="container">
+        <form action="#">
+    <h2>
+        
+        <label for="name" >Name:</label>
+    <input type="name" id="name" name="name" placeholder="enter your name" required><br>  
+    <label for="last name">Last Name:</label>
+    <input type="last name" id="last name" name="last name" placeholder="enter your last name" required><br>
+    <label for="date">Birthday:</label>
+    <input type="date" id="date" name="date" placeholder="jj/mm/aaaa" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="enter your email" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="enter your password" required><br>
+    <label for="pays">Document:</label>
+    <select type="city" name="villes" id="villes" placeholder="choose :">
+    4 <option value="agadir">Passport</option>
+    5 <option value="tanger">Local ID</option>
+    6 <option value="casablanca">Driver's license</option>
+    10 </select><br>
+        <label>File:</label>
+        <input type="file" name="fichier" accept="image/jpeg" /><br>
+        <input type="hidden" name="MAX_FILE_SIZE" value="10000" />
+        <button type="submit" onclick="location.href='checkyouremail.html';">Send</button><br>
+        <input type="reset" value="reset"/><br>
+    </h2> 
+    </form>
+
+</div>

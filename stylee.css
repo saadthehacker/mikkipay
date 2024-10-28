@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'CustomFont'; /* Name your font family */
+  src: url('Lato-Black.ttf'); /* Locate the .ttf file within your directory*/
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a3c3f2;
+  
+ 
+}
+
+li {
+  float: left;
+
+}
+
+
+li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'CustomFont',sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+body{
+  background-color: lavender;
+  background-image: url('background\ pic\.svg');
+  background-repeat: no-repeat;
+  background-size: 110% 110% ;
+  background-position: center;
+  background-attachment :scroll;
+
+}
+.intro{
+  border: solid;
+  border-color: black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 5px #a3c3f2;
+  font-family: 'CustomFont',sans-serif;
+  box-shadow: #555;
+  text-shadow: 5px #a3c3f2;
+  color: black;
+
+}
+.lower{
+  font-family: 'CustomFont',sans-serif;
+}
+h1{
+  font-family: 'CustomFont',sans-serif;
+}
+.aboutus{
+  border: solid;
+  border-color: black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 5px #a3c3f2;
+  font-family: 'CustomFont',sans-serif;
+  box-shadow: #555;
+  text-shadow: #a3c3f2;
+  color: black;
+
+}
+
+
+
