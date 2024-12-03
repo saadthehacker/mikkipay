@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'CustomFont';
+    /* Name your font family */
+    src: url('Lato-Black.ttf');
+    /* Locate the .ttf file within your directory*/
+}
+.welcomeback{
+font-family: 'CustomFont', sans-serif;
+text-align: center;
+font-size: 40px;
+margin-top: 25px;
+}
+.saadelm2004{
+    font-family: 'CustomFont', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5px ;
+}
+body {
+    background-color: #f3f3f3;
+    font-family: 'CustomFont', sans-serif;
+}
+
+.container {
+    width: 500px;
+    height: 350px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #92E3A9;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #444;
+    font-size: 35px;
+}
+
+label,
+input[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="name"],
+input[type="last name"],
+input[type="date"],
+input[type="email"],
+input[type="city"],
+input[type="file"],
+input[type="hidden"],
+input[type="reset"] {
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    border: 1px dotted #ccc;
+    box-sizing: border-box;
+    margin-left: 120px;
+    font-family: 'CustomFont', sans-serif;
+}
+
+input[type="submit"] {
+    background-color: #a3c3f2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+body {
+    background-color: #D3D3D3;
+}
+
+.submit {
+    margin-top: 30px;
+    margin-left: 0px;
+    background-color: #92E3A9;
+    /* Button background color */
+    color: rgb(0, 0, 0);
+    /* Text color */
+    padding: 10px 20px;
+    /* Space inside the button */
+    font-size: 20px;
+    /* Font size */
+    border: none;
+    /* Remove the default border */
+    border-radius: 25px;
+    /* Rounded corners */
+    cursor: pointer;
+    font-family: 'CustomFont', sans-serif;
+    width: 115px;
+    /* Fixed width of 200px */
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 190px;
+}
+
+.label {
+    margin-top: 12px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    font-family: 'CustomFont', sans-serif;
+    font-size: 19px;
+}
+
+a {
+    text-decoration: none;
+    /* Removes the underline */
+    color: inherit;
+    /* Inherits the color from the parent element */
+}
+.feess{
+    margin-left: 130px;
+    font-family: 'CustomFont', sans-serif;
+}
+.logout{
+    margin-top: 290px;
+        margin-left: 0px;
+        background-color: #92E3A9;
+        /* Button background color */
+        color: rgb(0, 0, 0);
+        /* Text color */
+        padding: 10px 20px;
+        /* Space inside the button */
+        font-size: 20px;
+        /* Font size */
+        border: none;
+        /* Remove the default border */
+        border-radius: 25px;
+        /* Rounded corners */
+        cursor: pointer;
+        font-family: 'CustomFont', sans-serif;
+        width: 115px;
+        /* Fixed width of 200px */
+        height: 45px;
+        
+}

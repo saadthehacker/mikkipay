@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="signupstyle.css">
+<body>
+    <style>
+        h2 {
+            text-align: center;
+            
+        }
+    </style>
+    <style>
+
+        label {
+            display: inline-block;
+            width: 140px;
+            text-align: right;
+          }
+        
+    </style>
+    <div class="container">
+        <form action="#">
+    <h2>
+        
+        <label for="name" >Name:</label>
+    <input type="name" id="name" name="name" placeholder="enter your name" required><br>  
+    <label for="last name">Last Name:</label>
+    <input type="last name" id="last name" name="last name" placeholder="enter your last name" required><br>
+    <label for="date">Birthday:</label>
+    <input type="date" id="date" name="date" placeholder="jj/mm/aaaa" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="enter your email" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="enter your password" required><br>
+    <label for="pays">Document:</label>
+    <select type="city" name="villes" id="villes" placeholder="choose :">
+    <option value="agadir">Passport</option>
+    <option value="tanger">Local ID</option>
+    <option value="casablanca">Driver's license</option>
+    </select><br>
+        <label>File:</label>
+        <input type="file" name="fichier" accept="image/jpeg" /><br>
+        <input type="hidden" name="MAX_FILE_SIZE" value="10000" />
+        <button  onclick="getto()" class="submit" id="myButton">submit</button><br>
+        <script>
+            // Ensure all buttons have smooth zoom via hover states
+            const buttons = document.querySelectorAll("button");
+
+            // Apply hover effect dynamically (if additional styles need scripting)
+            buttons.forEach(button => {
+                button.addEventListener("mouseover", () => {
+                    button.style.transform = "scale(1.3)";
+                    button.style.boxShadow = "0 5px 15px rgba(0, 123, 255, 0.4)";
+                    button.style.transition = 'transform 0.3s ease';
+                });
+
+                button.addEventListener("mouseout", () => {
+                    button.style.transform = "scale(1)";
+                    button.style.boxShadow = "none";
+                });
+            });
+        </script>
+ <script>
+    function getto(){
+        alert("you can now login :)")
+        window.location.href = "signinpage.html"
+        
+    }
+ </script>
+    </h2> 
+    </form>
+
+</div>

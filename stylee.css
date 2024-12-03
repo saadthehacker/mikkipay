@@ -1,0 +1,161 @@
+/* Custom Fonts */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'StyledFont';
+  src: url('Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Font';
+  src: url('Raleway-Bold.ttf') format('truetype');
+}
+
+/* Global Styles */
+body {
+  font-family: 'CustomFont', sans-serif;
+  background-image: url("background picture.svg");
+  background-color: #FFFFF0;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 50%;
+}
+
+/* Responsive Styles */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  background-color: #92E3A9;
+}
+
+li {
+  flex: 1 1 calc(33.33% - 2vw);
+  margin: 1vw;
+  text-align: center;
+}
+
+.intro {
+  font-family: 'StyledFont', sans-serif;
+  font-size: calc(0.8em + 2vw);
+  margin: 1vw;
+}
+
+
+.button1,
+.button2,
+.button3,
+.button4 {
+  font-family: 'CustomFont', sans-serif;
+  font-size: calc(1rem + 0.5vw);
+  padding: 0.5em 1em;
+  margin: 2vw;
+  border-radius: 0.5em;
+  display: inline-block;
+  text-align: center;
+  background-color: #92E3A9;
+}
+.button{
+    font-family: 'CustomFont', sans-serif;
+      font-size: calc(1rem + 0.5vw);
+      padding: 0.5em 1em;
+      margin-left: 18vw;
+      margin-top: 3vw;
+      border-radius: 0.5em;
+      display: inline-block;
+      text-align: center;
+      background-color: #92E3A9;
+}
+
+.container {
+  font-family: 'StyledFont', sans-serif;
+  width: 90%;
+  max-width: 800px;
+  margin: 10vw auto;
+  background-color: #fff;
+  border-radius: 1em;
+  box-shadow: 0 0 1.5em #92E3A9;
+  padding: 2em;
+}
+
+.plans2,
+.plans3 {
+  font-family: 'Font', sans-serif;
+  width: 30%;
+  max-width: 400px;
+  margin: 18vw auto;
+  background-color: #92E3A9;
+  border-radius: 1em;
+  box-shadow: 0 0 1.5em #92E3A9;
+  padding: 1em;
+  transition: transform 0.3s ease;
+}
+.plans{
+    font-family: 'Font', sans-serif;
+      width: 30%;
+      max-width: 400px;
+      margin: 3vw auto;
+      background-color: #92E3A9;
+      border-radius: 1em;
+      box-shadow: 0 0 1.5em #92E3A9;
+      padding: 1em;
+      transition: transform 0.3s ease;
+}
+.percentage {
+  font-size: 8vw;
+}
+.plans:hover,
+.plans2:hover,
+.plans3:hover {
+  transform: scale(1.08);
+}
+
+h1,
+.reviews,
+.ourplans {
+  font-family: 'CustomFont', sans-serif;
+  font-size: calc(2rem + 2vw);
+  text-align: center;
+  margin: 2vw 0;
+  margin-top: 8vw;
+  margin-bottom: 5vw;
+}
+
+.fast,
+.secure,
+.multi,
+.analytics {
+  font-family: 'Font', sans-serif;
+  font-size: calc(1.2rem + 1vw);
+  margin: 2vw;
+  display: flex;
+  align-items: left;
+  gap: 1vw;
+}
+
+.lightning {
+  float: left;
+  margin-left: 70px;
+  margin-right: 10px;
+  width: 55px;
+}
+
+footer {
+  font-family: 'CustomFont', sans-serif;
+  font-size: calc(1rem + 0.5vw);
+  padding: 2vw;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2vw;
+}
+.starter{
+  margin-top: 0.5vw;
+  font-size: 4vw;
+}

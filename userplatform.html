@@ -1,0 +1,90 @@
+<!-- Page B -->
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="userpart.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page B</title>
+    <script>
+        // Function to get a cookie by name
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        // Example: Reading a cookie
+        document.addEventListener('DOMContentLoaded', () => {
+            const username = getCookie('username');
+            if (username) {
+                document.getElementById('output').textContent = `Welcome back, ${username} !`;
+            } else {
+                document.getElementById('output').textContent = 'No username found.';
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <h1></h1>
+    <p id="output" class="saadelm2004"></p>
+    <p class="welcomeback">no sales have been made yet :) <br>
+    but checkout our tool </p>
+    <div class="container">
+        <form action="#" id="cookieForm">
+            <h2>Fee Calculator :</h2>
+            <label for="username" class="label">Money Processed in USD :</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password" class="label">      Total Fees :</label>
+            <div type="password" id="password" name="password" class="feess"></div>
+            <button class="submit" id="submitbtn" type="submit"
+                onclick="getfee()">calculate</button></div>
+                <button class="logout" id="submitbtn" type="submit" onclick="window.location.href='index.html'">logout</button>
+</body>
+<script>
+    // Function to calculate fees
+    function calculateFee() {
+        // Get the input value
+        const moneyProcessed = document.getElementById('username').value;
+
+        // Validate if the input is a valid number
+        if (!moneyProcessed || isNaN(moneyProcessed) || moneyProcessed <= 0) {
+            alert("Please enter a valid amount greater than zero.");
+            return;
+        }
+
+        // Calculate the fee (5%)
+        const fee = (moneyProcessed * 0.05).toFixed(2); // Fixed to 2 decimal places for currency format
+
+        // Update the fee display
+        document.getElementById("password").textContent = `${fee} $`;
+    }
+
+    // Add event listener for the form submission
+    document.getElementById('cookieForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission and page reload
+        calculateFee(); // Call the fee calculation function
+    });
+</script>
+
+<script>
+    // Ensure all buttons have smooth zoom via hover states
+    const buttons = document.querySelectorAll("button");
+
+    // Apply hover effect dynamically (if additional styles need scripting)
+    buttons.forEach(button => {
+        button.addEventListener("mouseover", () => {
+            button.style.transform = "scale(1.3)";
+            button.style.boxShadow = "0 5px 15px rgba(0, 123, 255, 0.4)";
+            button.style.transition = 'transform 0.3s ease';
+        });
+
+        button.addEventListener("mouseout", () => {
+            button.style.transform = "scale(1)";
+            button.style.boxShadow = "none";
+        });
+    });
+</script>
+</html>
